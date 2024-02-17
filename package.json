@@ -12,6 +12,7 @@
     "checkAll": "npm run check && npm run lint",
     "fixAll": "npm run format && npm run lintfix"
   },
+  
   "author": "",
   "license": "ISC",
   "dependencies": {

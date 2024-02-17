@@ -1,5 +1,72 @@
-/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
+/* Основные стили проекта. 
+Это стили для темы, которую вы 
+верстаете первой. */
 
 .page {
-  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  background-image: url(../images/cover-image-dark.png);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  padding: 10px;
+  font-family: 'IBM Plex Mono';
+  font-size: 18px;
+  position: relative;
+}
+
+.header {
+  height: 100vh;
+}
+
+.decoration {
+  display: flex;
+  gap: 2.96px;
+  justify-content: end;
+  align-items: center;
+}
+
+.decoration__text {
+  color: var(--accent-color);
+}
+
+.decoration__empty-tag {
+  position: relative;
+  inline-size: 25px;
+  block-size: 25px;
+  border-block-start: 1px solid var(--accent-color);
+  border-inline-end: 1px solid var(--accent-color);
+}
+
+.decoration__empty-tag::after {
+  content: "";
+  position: absolute;
+  background-color: var(--accent-color);
+  width: 9px;
+  height: 9px;
+  right: 8px;
+  top: 8px;
+  border-radius: 50%;
+  box-shadow: 0 0 5px 3px var(--accent-color);
+}
+
+
+.header__theme-menu-list {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  justify-content: end;
+  gap: 13px;
+  margin-block-start: 39px;
+}
+
+
+.header__theme-menu-button {
+  border: none;
+  color: var(--accent-color);
+  background-color: transparent;
+  text-transform: lowercase;
+  line-height: 18px;
+  padding: 1.5px 13px;
+}
+
+.header__theme-menu-button_active {
+  border: 1px solid  var(--accent-color);
 }
