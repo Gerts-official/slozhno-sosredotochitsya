@@ -7,14 +7,17 @@
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
-  padding: 10px;
+  /* Подумал было бы прикольно если паддинг 
+  будет плавно менятся от 10 к 20px */
+  padding: clamp(10px, calc((15 / 571) * 100%), 20px);
   font-family: 'IBM Plex Mono';
   font-size: 18px;
   position: relative;
 }
 
 .header {
-  height: 100vh;
+  min-height: 100vh;
+  position: relative;
 }
 
 .decoration {
@@ -28,7 +31,7 @@
   color: var(--accent-color);
 }
 
-.decoration__empty-tag {
+.decoration__empty-tag-up {
   position: relative;
   inline-size: 25px;
   block-size: 25px;
@@ -36,8 +39,8 @@
   border-inline-end: 1px solid var(--accent-color);
 }
 
-.decoration__empty-tag::after {
-  content: "";
+.decoration__empty-tag-up::after {
+  content: '';
   position: absolute;
   background-color: var(--accent-color);
   width: 9px;
@@ -48,25 +51,85 @@
   box-shadow: 0 0 5px 3px var(--accent-color);
 }
 
-
 .header__theme-menu-list {
   display: grid;
   grid-template-rows: repeat(3, 1fr);
   justify-content: end;
-  gap: 13px;
-  margin-block-start: 39px;
+  gap: 10px 13px;
+  margin-block-start: 39.5px;
 }
-
 
 .header__theme-menu-button {
   border: none;
   color: var(--accent-color);
   background-color: transparent;
   text-transform: lowercase;
-  line-height: 18px;
+  line-height: 19px;
   padding: 1.5px 13px;
 }
 
 .header__theme-menu-button_active {
-  border: 1px solid  var(--accent-color);
+  border: 1px solid var(--accent-color);
+  /* height: 23.5px; */
 }
+
+.header__title-title {
+  text-transform: lowercase;
+  color: #db00ff;
+  text-shadow: 4px 4px 0 var(--accent-color);
+  font-size: clamp(7.25rem, 5.7694rem + 6.3174vw, 9.8125rem);
+  font-weight: 700;
+  line-height: 82.5%;
+  margin-block-start: 70px;
+}
+
+.header__title_container {
+  display: flex;
+  justify-content: end;
+}
+
+.header__title-description {
+  margin-block-start: 55px;
+  background-color: var(--accent-color);
+  inline-size: clamp(355px, calc((364 / 728) * 100%), 491px);
+  color: #000028;
+  font-weight: 700;
+  line-height: 23.4px;
+}
+
+.decoration__empty-tag-down {
+  bottom: 15px;
+  position: absolute;
+  inline-size: 25px;
+  block-size: 25px;
+  border-block-end: 1px solid var(--accent-color);
+  border-inline-start: 1px solid var(--accent-color);
+}
+
+@media (min-width: 375px) and (max-width: 768px) {
+
+  .header__theme-menu-list {
+    margin-block-start: clamp(40.5px, calc(40.5px + (100vw - 375px) * (147.5px - 40.5px) / (768 - 375)), 147.5px);
+  }
+
+  .header__title-title {
+    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  }
+}
+
+@media (min-width: 1023px) {
+
+  .header__theme-menu-list {
+    display: flex;
+    margin-block-start: -22px;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .header__title-title {
+    margin-block-start: 274.5px;
+    margin-block-end: 114px;
+  }
+
+}
+
