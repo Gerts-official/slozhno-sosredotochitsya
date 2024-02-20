@@ -10,7 +10,10 @@
   font-family: 'IBM Plex Mono';
   font-size: 18px;
   padding: var(--page-padding);
+
 }
+
+/* HEADER START */
 
 .header {
   height: calc(100vh - calc(var(--page-padding) * 2));
@@ -71,7 +74,6 @@
 }
 
 .header__theme-menu-list {
-  padding-top: 12px;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -98,7 +100,7 @@
   text-transform: lowercase;
   color: #db00ff;
   text-shadow: 4px 4px 0 var(--accent-color);
-  font-size: 120px;
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   font-weight: 700;
   line-height: 82.5%;
   align-self: center;
@@ -117,32 +119,69 @@
   font-weight: 700;
   line-height: 23.4px;
 }
+/* HEADER END */
 
-/* @media (min-width: 375px) and (max-width: 768px) {
+/* MAIN START */
+/* ARTICLE-WHY START */
 
-  .header__theme-menu-list {
-    margin-block-start: clamp(40.5px, calc(40.5px + (100vw - 375px) * (147.5px - 40.5px) / (768 - 375)), 147.5px);
-  }
+.article {
+  color: var(--accent-color);
+}
 
-  .header__title-title {
-    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-  }
-} */
-/* 
-@media (min-width: 1023px) {
+.article-why {
+margin-block-start: 40px;
+display: grid;
+grid-auto-flow: row;
+row-gap: 20px;
+}
 
-  .header__theme-menu-list {
-    display: flex;
-    margin-block-start: -22px;
-    gap: 10px;
-    justify-content: center;
-  }
+.article-why__header {
+  color: currentColor;
+}
 
-  .header__title-title {
-    margin-block-start: 274.5px;
-    margin-block-end: 114px;
-  }
-} */
+.article__header-title {
+  color: currentColor;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23.4px;
+
+}
+
+/* ARTICLE-WHY END */
+
+
+/* ARTICLE-WHAT START */
+
+/* ARTICLE-WHAT END */
+
+
+/* ARTICLE-HOW START */
+
+/* ARTICLE-HOW END */
+
+/* ARTICLE-PICTURES START */
+/* ARTICLE-PICTURES END */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* @MEDIA START */
 
 
 @media (min-width: 768px ) {
@@ -159,6 +198,7 @@
 
   .header__title-title {
     margin-inline-start: -20px;
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 
   .header__title_container {
@@ -170,5 +210,27 @@
     grid-column: 2/3;
   }
 
+  .article-why {
+    margin-block-start: 60px;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 20px; 
+    }
 
 }
+
+@media (min-width: 1024px) {
+
+  .header__theme-menu {
+    justify-content: center;
+    align-items: start;
+  }
+  
+  .header__theme-menu-list {
+    flex-direction: row;
+    padding-block-start: 0;
+  }
+
+}
+
+
+/* @MEDIA END */
