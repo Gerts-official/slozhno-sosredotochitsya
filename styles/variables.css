@@ -5,7 +5,10 @@
 */
 
 :root {
-  --accent-color: #ff0070;
   --backgound-image: url(../images/cover-image-dark.png);
   --page-padding: 10px;
+  --accent-color: #ff0070;
+  --title-color: #db00ff;
+  --heading-color: #000028;
+  --paragraph-color: #f1b2ce;
 }

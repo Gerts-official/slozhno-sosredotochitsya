@@ -98,7 +98,7 @@
 
 .header__title-title {
   text-transform: lowercase;
-  color: #db00ff;
+  color: var(--title-color);
   text-shadow: 4px 4px 0 var(--accent-color);
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   font-weight: 700;
@@ -115,7 +115,7 @@
 
 .header__title-description {
   background-color: var(--accent-color);
-  color: #000028;
+  color: var(--heading-color);
   font-weight: 700;
   line-height: 23.4px;
 }
@@ -125,14 +125,18 @@
 /* ARTICLE-WHY START */
 
 .article {
+  display: grid;
+  row-gap: 20px;
   color: var(--accent-color);
+  margin-block-start: 50px;
 }
 
+
+
 .article-why {
-margin-block-start: 40px;
-display: grid;
-grid-auto-flow: row;
-row-gap: 20px;
+  /* display: grid;
+  row-gap: 20px; */
+
 }
 
 .article-why__header {
@@ -144,18 +148,63 @@ row-gap: 20px;
   font-size: 18px;
   font-weight: 700;
   line-height: 23.4px;
+}
+
+.article__main {
 
 }
+
+.article__main-heading {
+  color: var(--heading-color);
+  background-color: var(--accent-color);
+  margin-block-end: 10px;
+  font-size: 18px;
+
+}
+
+.article__main-paragraph {
+color: var(--paragraph-color);
+font-weight: 400;
+line-height: 23.4px;
+}
+
+.article__main-paragraph:not(:last-of-type) {
+  margin-block-end: 20px;
+}
+
+.article-link {
+  color: currentColor;
+  text-decoration: none;
+  text-shadow: 2px 1px 0 var(--accent-color);
+}
+
+.article-link:hover {
+  text-decoration: underline;
+}
+
+.article-link:focus-visible {
+outline: 1px solid var(--paragraph-color);
+}
+
+
 
 /* ARTICLE-WHY END */
 
 
 /* ARTICLE-WHAT START */
 
+.article-what {
+  /* display: grid;
+  row-gap: 20px; */
+}
 /* ARTICLE-WHAT END */
 
-
 /* ARTICLE-HOW START */
+
+.article-how {
+  /* display: grid;
+  row-gap: 20px; */
+}
 
 /* ARTICLE-HOW END */
 
