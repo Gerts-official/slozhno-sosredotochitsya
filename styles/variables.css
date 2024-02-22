@@ -6,10 +6,10 @@
 
 :root {
   --backgound-image: url(../images/cover-image-dark.png);
-  --page-padding: 10px;
-  --accent-color: #ff0070;
   --title-color: #db00ff;
-  --heading-color: #000028;
-  --paragraph-color: #f1b2ce;
-  --main-color: #ff0070;
+  --menu-color: #FF0070;
+  --accent-color: #ff0070;
+  --paragraph-text-color: #F1B2CE;
+  --article-heading-color: #FF0070;
+  --accent-text-color: #000028;
 }

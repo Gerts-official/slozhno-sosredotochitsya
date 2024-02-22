@@ -4,18 +4,18 @@
   переключая тему
 */
 
-.page.theme_light {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+:root{
   --backgound-image: url(../images/cover-image-light.png);
-  --accent-color: #ff0070;
   --title-color: #FFC2E6;
-  --heading-color: #353430;
-  --paragraph-color: #353430;
-  --main-color: #353430;
+  --menu-color: #353430;
+  --accent-color: #FF8DCB;
+  --paragraph-text-color: #353430;
+  --article-heading-color: #FF0070;
+  --accent-text-color: #353430;
 }
+
+
+
 
 .page.theme_light .decoration__text,
 .page.theme_light .decoration__empty-tag-up::after {

@@ -35,7 +35,7 @@ picture {
 
 button,
 a {
-  color: currentColor;
+  color: var(--menu-color);
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
