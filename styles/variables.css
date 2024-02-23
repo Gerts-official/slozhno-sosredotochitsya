@@ -1,11 +1,8 @@
-/*
-  Переменные для вашего проекта
-  и их переопределение под различные 
-  устройства
-*/
+/* ПЕРЕМЕННЫЕ НА ВСЕ СЛУЧАИ ЖИЗНИ */
 
 :root {
   --backgound-image: url(../images/cover-image-dark.png);
+  --background-color: #000028;
   --title-color: #db00ff;
   --menu-color: #FF0070;
   --accent-color: #ff0070;
