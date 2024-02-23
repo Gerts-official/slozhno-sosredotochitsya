@@ -2,6 +2,7 @@
 
 :root {
   --backgound-image: url(../images/cover-image-dark.png);
+  --page-padding: 10px;
   --background-color: #000028;
   --title-color: #db00ff;
   --menu-color: #FF0070;
