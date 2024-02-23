@@ -1,11 +1,8 @@
-/*
-  Специально для светлой темы при наличии класса.
-  Здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
+/* НЕ ВЕЛЮЧАТЬ, МЫ НА СТОРОНЕ ТЬМЫ */
 
-:root{
+.page.theme_light{
   --backgound-image: url(../images/cover-image-light.png);
+  --background-color: #FFF1F7;
   --title-color: #FFC2E6;
   --menu-color: #353430;
   --accent-color: #FF8DCB;
@@ -14,10 +11,20 @@
   --accent-text-color: #353430;
 }
 
-
-
-
 .page.theme_light .decoration__text,
 .page.theme_light .decoration__empty-tag-up::after {
   display: none;
+}
+
+@media (prefers-color-scheme: light) {
+  
+  .page {
+    --backgound-image: url(../images/cover-image-light.png);
+    --title-color: #FFC2E6;
+    --menu-color: #353430;
+    --accent-color: #FF8DCB;
+    --paragraph-text-color: #353430;
+    --article-heading-color: #FF0070;
+    --accent-text-color: #353430;
+  }
 }

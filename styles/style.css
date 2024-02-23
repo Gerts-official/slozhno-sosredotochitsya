@@ -1,12 +1,11 @@
-/* Основные стили проекта. 
-Это стили для темы, которую вы 
-верстаете первой. */
+/* ЭТО СТИЛЬ ДЕТКА */
 
 .page {
   padding: var(--page-padding);
   font-family: 'IBM Plex Mono';
   font-size: 18px;
   background-image: var(--backgound-image);
+  background-color: var(--background-color);
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -93,12 +92,15 @@
   cursor: pointer;
 }
 
+.header__theme-menu-button:focus-visible {
+outline: none;
+border-block-end: 1px solid var(--menu-color);
+}
+
 .header__theme-menu-button_active {
   border: 1px solid var(--menu-color);
   pointer-events: none;
 }
-
-
 
 .header__title-title {
   align-self: center;
@@ -128,7 +130,6 @@
   color: var(--main-color);
 }
 
-
 .article__header-title {
   color: var(--article-heading-color);
   font-size: 18px;
@@ -156,7 +157,6 @@
   line-height: 23.4px;
 }
 
-
 .article-link {
   color: var(--paragraph-text-color);
   text-decoration: none;
@@ -168,7 +168,7 @@
 }
 
 .article-link:focus-visible {
-  outline: 1px solid var(--accent-color);
+  outline: 1px solid var(--menu-color);
 }
 /* ARTICLE-WHY END */
 
@@ -181,7 +181,7 @@
 
 /* ARTICLE-HOW START */
 
-.article-how__main>ul {
+.article-how__main > ul {
   display: grid;
   row-gap: 20px;
 }
@@ -261,7 +261,6 @@
   border-block-end: 1px solid var(--menu-color);
   border-inline-start: 1px solid var(--menu-color);
 }
-
 
 /* @MEDIA START */
 
@@ -355,8 +354,8 @@
   }
 
   .header__theme-menu {
-   align-self: start;
-   justify-self: center;
+    align-self: start;
+    justify-self: center;
   }
 
   .header__theme-menu-list {
@@ -380,7 +379,7 @@
   }
 
   .footer {
-  block-size: calc(100vh - var(--page-padding));
+    block-size: calc(100vh - var(--page-padding));
   }
 
   .decoration-footer__empty-tag-up {

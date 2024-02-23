@@ -1,7 +1,8 @@
+/* ДАРТ ВЕЙДЕР */
 
-
-:root {
+.page.theme_dark {
   --backgound-image: url(../images/cover-image-dark.png);
+  --background-color: #000028;
   --title-color: #db00ff;
   --menu-color: #FF0070;
   --accent-color: #ff0070;
@@ -9,4 +10,3 @@
   --article-heading-color: #FF0070;
   --accent-text-color: #000028; 
 }
-
