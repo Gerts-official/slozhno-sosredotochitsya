@@ -2,7 +2,7 @@
 
 .page {
   padding: var(--page-padding);
-  font-family: 'IBM Plex Mono';
+  font-family: IBM Plex Mono;
   font-size: 18px;
   background-image: var(--backgound-image);
   background-color: var(--background-color);
@@ -93,8 +93,8 @@
 }
 
 .header__theme-menu-button:focus-visible {
-outline: none;
-border-block-end: 1px solid var(--menu-color);
+  outline: none;
+  border-block-end: 1px solid var(--menu-color);
 }
 
 .header__theme-menu-button_active {

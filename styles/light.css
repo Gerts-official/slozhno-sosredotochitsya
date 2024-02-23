@@ -2,12 +2,12 @@
 
 .page.theme_light {
   --backgound-image: url(../images/cover-image-light.png);
-  --background-color: #FFF1F7;
-  --title-color: #FFC2E6;
+  --background-color: #fff1f7;
+  --title-color: #ffc2e6;
   --menu-color: #353430;
-  --accent-color: #FF8DCB;
+  --accent-color: #ff8dcb;
   --paragraph-text-color: #353430;
-  --article-heading-color: #FF0070;
+  --article-heading-color: #ff0070;
   --accent-text-color: #353430;
 }
 
@@ -17,14 +17,14 @@
 }
 
 @media (prefers-color-scheme: light) {
-  
+
   .page {
     --backgound-image: url(../images/cover-image-light.png);
-    --title-color: #FFC2E6;
+    --title-color: #ffc2e6;
     --menu-color: #353430;
-    --accent-color: #FF8DCB;
+    --accent-color: #ff8dcb;
     --paragraph-text-color: #353430;
-    --article-heading-color: #FF0070;
+    --article-heading-color: #ff0070;
     --accent-text-color: #353430;
   }
 }
