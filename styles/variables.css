@@ -1,6 +1,7 @@
 /* ПЕРЕМЕННЫЕ НА ВСЕ СЛУЧАИ ЖИЗНИ */
 
 :root {
+  --page-padding: 10px;
   --backgound-image: url(../images/cover-image-dark.png);
   --page-padding: 10px;
   --background-color: #000028;
