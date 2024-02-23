@@ -3,7 +3,6 @@
 :root {
   --page-padding: 10px;
   --backgound-image: url(../images/cover-image-dark.png);
-  --page-padding: 10px;
   --background-color: #000028;
   --title-color: #db00ff;
   --menu-color: #ff0070;
@@ -11,4 +10,8 @@
   --paragraph-text-color: #f1b2ce;
   --article-heading-color: #ff0070;
   --accent-text-color: #000028;
+  --default-font-family: 'IBM Plex Mono';
+  --default-font-size: 18px;
+  --font-weight-bold: 700;
+  --font-weight-normal: 400;
 }

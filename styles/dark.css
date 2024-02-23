@@ -9,4 +9,22 @@
   --paragraph-text-color: #f1b2ce;
   --article-heading-color: #ff0070;
   --accent-text-color: #000028;
+  --outline-button: rgba(255, 0, 112, 0.4);
+}
+
+
+@media (prefers-color-scheme: dark) {
+
+  .page {
+
+    --backgound-image: url(../images/cover-image-dark.png);
+    --background-color: #000028;
+    --title-color: #db00ff;
+    --menu-color: #ff0070;
+    --accent-color: #ff0070;
+    --paragraph-text-color: #f1b2ce;
+    --article-heading-color: #ff0070;
+    --accent-text-color: #000028;
+    --outline-button: rgba(255, 0, 112, 0.4);
+  }
 }
