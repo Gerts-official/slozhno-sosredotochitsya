@@ -9,7 +9,7 @@
   --paragraph-text-color: #f1b2ce;
   --article-heading-color: #ff0070;
   --accent-text-color: #000028;
-  --outline-button: rgba(255, 0, 112, 0.4);
+  --outline-button: rgb(255 0 112 / 0.4);
 }
 
 
@@ -25,6 +25,6 @@
     --paragraph-text-color: #f1b2ce;
     --article-heading-color: #ff0070;
     --accent-text-color: #000028;
-    --outline-button: rgba(255, 0, 112, 0.4);
+    --outline-button: rgb(255 0 112 / 0.4);
   }
 }
