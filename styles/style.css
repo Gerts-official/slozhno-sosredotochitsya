@@ -30,18 +30,18 @@
 }
 
 .decorated-zone::before {
-content: "";
-position: absolute;
-block-size: 25px;
-inline-size: 25px;
-inset-inline-end: 0;
-inset-block-start: 0;
-border-block-start: 1px solid var(--menu-color);
-border-inline-end: 1px solid var(--menu-color);
+  content: '';
+  position: absolute;
+  block-size: 25px;
+  inline-size: 25px;
+  inset-inline-end: 0;
+  inset-block-start: 0;
+  border-block-start: 1px solid var(--menu-color);
+  border-inline-end: 1px solid var(--menu-color);
 }
 
 .decorated-zone::after {
-  content: "";
+  content: '';
   position: absolute;
   block-size: 25px;
   inline-size: 25px;
@@ -49,11 +49,10 @@ border-inline-end: 1px solid var(--menu-color);
   inset-inline-start: 0;
   border-inline-start: 1px solid var(--menu-color);
   border-block-end: 1px solid var(--menu-color);
-
-  }
+}
 
 .decoration-rec::before {
-  content: "rec";
+  content: 'rec';
   text-transform: uppercase;
   position: absolute;
   inset-block-start: 0;
@@ -62,16 +61,16 @@ border-inline-end: 1px solid var(--menu-color);
 }
 
 .decoration-rec::after {
-  content: "";
   position: absolute;
   inset-block-start: 8px;
   inset-inline-end: 9px;
+  block-size: 8px;
+  inline-size: 8px;
+  border-radius: 50%;
   background-color: var(--menu-color);
   box-shadow: 0 0 4px 2px var(--menu-color);
-
-  height: 8px;
-  width: 8px;
-border-radius: 50%;
+  content: '';
+  
 }
 
 .header__theme-menu-list {
@@ -121,14 +120,16 @@ border-radius: 50%;
   color: var(--title-color);
 }
 
-.header__title-description {
+.header__title_description {
   font-weight: var(--font-weight-bold);
   line-height: 23.4px;
   color: var(--accent-text-color);
+}
+
+.title-decor {
   background-color: var(--accent-color);
 }
 
-/* MAIN */
 /* SECTION-WHY */
 
 .section {
@@ -143,6 +144,7 @@ border-radius: 50%;
   font-size: var(--default-font-size);
   font-weight: var(--font-weight-bold);
   line-height: 23.4px;
+  grid-column: span 1;
 }
 
 .section__main {
@@ -153,7 +155,6 @@ border-radius: 50%;
 
 .article-heading {
   color: var(--accent-text-color);
-  background-color: var(--accent-color);
   margin-block-end: 10px;
   font-size: var(--default-font-size);
   line-height: 23.4px;
@@ -172,10 +173,10 @@ border-radius: 50%;
 }
 
 .article-link:hover {
-border-bottom: 1px solid currentColor;
+  border-bottom: 1px solid currentColor;
 }
 
-.article-link:focus{
+.article-link:focus {
   outline: none;
 }
 
@@ -199,14 +200,12 @@ border-bottom: 1px solid currentColor;
 
 .section__main-double-heading {
   color: var(--accent-text-color);
-  background-color: var(--accent-color);
   font-size: var(--default-font-size);
   line-height: 23.4px;
 }
 
 .article-ad-heading {
   color: var(--accent-text-color);
-  background-color: var(--accent-color);
   margin-block-end: 10px;
   font-size: var(--default-font-size);
   font-weight: var(--font-weight-normal);
@@ -217,7 +216,6 @@ border-bottom: 1px solid currentColor;
 
 .section-pictures {
   margin-block: 40px 0;
-  
 }
 
 .pictures-container {
@@ -244,13 +242,13 @@ border-bottom: 1px solid currentColor;
   block-size: calc(100vh - var(--page-padding));
 }
 
-.footer.decorated-zone::before{
-inset-block-start: var(--page-padding);
-} 
+.footer.decorated-zone::before {
+  inset-block-start: var(--page-padding);
+}
 
-.footer.decorated-zone::after{
+.footer.decorated-zone::after {
   inset-block-end: 0;
-  }
+}
 
 .footer__title-title {
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
@@ -279,7 +277,7 @@ inset-block-start: var(--page-padding);
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .header__title-description {
+  .header__title_description {
     grid-column: 2/3;
   }
 
@@ -287,10 +285,6 @@ inset-block-start: var(--page-padding);
     margin-block-start: 60px;
     grid-template-columns: 1fr 2fr;
     column-gap: 20px;
-  }
-
-  .section-what__header {
-    grid-column: span 1;
   }
 
   .section-what__main {
@@ -347,7 +341,6 @@ inset-block-start: var(--page-padding);
 }
 
 @media (min-width: 1024px) {
-
   .section {
     column-gap: 10px;
   }
@@ -379,10 +372,6 @@ inset-block-start: var(--page-padding);
 
   .footer {
     block-size: calc(100vh - var(--page-padding));
-  }
-
-  .decoration-footer__empty-tag-up {
-    top: 40px;
   }
 }
 /* THE END */
