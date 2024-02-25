@@ -92,7 +92,7 @@
 }
 
 .header__theme-menu-button:hover {
-  outline: 1px solid var(--menu-color);
+  outline: 1px solid var(--outline-button);
   cursor: pointer;
 }
 
@@ -120,7 +120,7 @@
   color: var(--title-color);
 }
 
-.header__title_description {
+.header__title-description {
   font-weight: var(--font-weight-bold);
   line-height: 23.4px;
   color: var(--accent-text-color);
@@ -272,12 +272,12 @@
     margin-inline-start: calc(0px - var(--page-padding));
   }
 
-  .header__title_container {
+  .header__title-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .header__title_description {
+  .header__title-description {
     grid-column: 2/3;
   }
 
